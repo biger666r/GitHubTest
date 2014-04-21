@@ -82,6 +82,7 @@ public class DisplayRecResult extends ListActivity implements OnSelectItemType,
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		inflater = LayoutInflater.from(this);
+		
 		nameViewGroup = inflater.inflate(R.layout.contact_info_name, null);
 		contactGroupSpinner = (Spinner) nameViewGroup
 				.findViewById(R.id.contact_group);

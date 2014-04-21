@@ -10,7 +10,7 @@ public class MessageId {
 	// public final static int DECODE_IMAGE_DATA_FAILURE =
 	// DECODE_IMAGE_DATA_SUCCESS
 	// + INTERVAL;
-
+	//---------
 	public final static int SAVE_CONTACT_SUCCESS = 2;
 
 	public final static int REC_THREAD_STOPPED = 3;
