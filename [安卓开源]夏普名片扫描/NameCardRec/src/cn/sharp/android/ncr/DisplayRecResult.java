@@ -82,7 +82,7 @@ public class DisplayRecResult extends ListActivity implements OnSelectItemType,
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		inflater = LayoutInflater.from(this);
-		
+
 		nameViewGroup = inflater.inflate(R.layout.contact_info_name, null);
 		contactGroupSpinner = (Spinner) nameViewGroup
 				.findViewById(R.id.contact_group);
@@ -175,6 +175,9 @@ public class DisplayRecResult extends ListActivity implements OnSelectItemType,
 				SimpleDateFormat dateFormat = new SimpleDateFormat(
 						"yyyy-MM-dd HH:mm:ss");
 				String dateStr = dateFormat.format(Calendar.getInstance()
+						.getTime());
+						//乱加的
+						String timeStr = dateFormat.format(Calendar.getInstance()
 						.getTime());
 				contact.updateItemValue(ContactPerson.ITEM_NOTE, -1,
 						getResources().getString(R.string.contact_default_note)
